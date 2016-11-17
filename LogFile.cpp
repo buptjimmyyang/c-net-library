@@ -50,7 +50,7 @@ std::string LogFile::getLogFileName(const std::string &basename,time_t *now)
 	struct tm tm;
 	*now =time(NULL);
 	gmtime_r(now,&tm);
-	strftime(timebuf,sizeof(timebuf),".%Y%m%d-%H%M%S.",&tm);
+	strftime(timebuf,sizeof(timebuf),"%Y%m%d-%H%M%S.",&tm);
 	filename+=timebuf;
 
 	filename+=hostname();
