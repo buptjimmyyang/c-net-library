@@ -2,6 +2,7 @@
 #include<stdio.h>
 #include<time.h>
 #include<unistd.h>
+#include<iostream>
 //get process id
 pid_t pid()
 {
@@ -21,7 +22,6 @@ std::string hostname()
 		}
 }
 LogFile::LogFile(const std::string &basename,size_t rollSize,bool threadSafe,int flushInterval,int checkEveryN):basename_(basename),rollSize_(rollSize),flushInterval_(flushInterval),checkEveryN_(checkEveryN),count_(0),mutex_(threadSafe?new MutexLock():NULL),startOfPeriod_(0),lastRoll_(0),lastFlush_(0){
-	
 	rollFile();
 	}
 bool LogFile::rollFile()

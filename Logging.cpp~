@@ -126,7 +126,7 @@ Logger::Logger(SourceFile file, int line):impl_(INFO, 0, file, line)
 
 	Logger::~Logger()
 		{
-//	cout<<"finish"<<endl;
+	cout<<"finish"<<endl;
 	impl_.finish();
 	 const LogStream::Buffer& buf(stream().buffer());
 	g_output(buf.data(), buf.length());

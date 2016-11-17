@@ -3,7 +3,6 @@
 #include<pthread.h>
 #include"Mutex.h"
 #include<errno.h>
-#include<stdint.h>
 class Condition
 {
 public:
@@ -27,7 +26,7 @@ public:
 
 	bool waitForSeconds(double seconds)
 	{
-		struct timespec abstime;
+		struct timeASpec abstime;
 		clock_gettime(CLOCK_REALTIME,&abstime);
 		const int64_t ks=1e9;
 
