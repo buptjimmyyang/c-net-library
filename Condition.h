@@ -5,6 +5,7 @@
 #include<errno.h>
 #include<stdint.h>
 //添加评论3 jimmyyang
+//this is a cpp condition
 class Condition
 {
 public:
