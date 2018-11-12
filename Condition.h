@@ -4,7 +4,7 @@
 #include"Mutex.h"
 #include<errno.h>
 #include<stdint.h>
-//添加条件变量注释yang
+//添加条件变量注释yangbing
 class Condition
 {
 public:
