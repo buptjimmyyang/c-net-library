@@ -6,7 +6,7 @@
 #include<stdint.h>
 //添加评论3 jimmyyang
 //this is a cpp condition
-//添加评论4 dev
+//添加评论5 master
 class Condition
 {
 public:
